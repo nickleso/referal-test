@@ -26,11 +26,11 @@
       </div>
 
       <!-- form -->
-      <form
-        action="https://www.livegoodtour.com/index#form"
+      <!-- action="https://www.livegoodtour.com/index#form"
         method="post"
-        name="PRE"
-      >
+        name="PRE" -->
+
+      <form>
         <input name="ENROLLER" value="4442503" type="hidden" />
         <input name="enroller" value="LGLAY" type="hidden" />
         <input name="SOURCE" value="" type="hidden" />
@@ -77,8 +77,12 @@
 
     <!-- join button -->
     <div class="nav-item">
-      <a href="/bo/join" class="nav-link-btn">Join Now</a>
+      <a href="https://www.livegood.com/bo/join" class="nav-link-btn"
+        >Join Now</a
+      >
     </div>
+
+    <!-- http://www.livegood.com/login?EMAIL=trant755@gmail.com&LOGIN=1&lang= -->
 
     <!-- join button styles -->
     <style>
@@ -130,6 +134,35 @@
 
     <script>
       console.log("hi!");
+
+      const form = document
+        .querySelector(".form-section")
+        .querySelector("form");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        let dataToConsole = {};
+
+        for (let [key, value] of formData.entries()) {
+          dataToConsole[key] = value;
+        }
+
+        console.log(dataToConsole);
+
+        await fetch("https://www.livegoodtour.com/index", {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        })
+          .then((res) => res.json())
+          .then((data) => console.log(data))
+          .catch((err) => console.log(err));
+      });
     </script>
   </body>
 </html>
