@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="./all.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Test form</h1>
+
+    <div style="width: 300px" class="col-lg-4 col-xl-4 form-section">
+      <div class="form-section-top">
+        <p class="form-section-title">
+          Reserve Your Position<span class="form-section-title-lg-center"
+            >TODAY</span
+          >
+        </p>
+
+        <p class="form-section-top-disclaimer">
+          There is no cost to reserve your free position and you can opt out
+          anytime
+        </p>
+      </div>
+
+      <!-- form -->
+      <form
+        action="https://www.livegoodtour.com/index#form"
+        method="post"
+        name="PRE"
+      >
+        <input name="ENROLLER" value="4442503" type="hidden" />
+        <input name="enroller" value="LGLAY" type="hidden" />
+        <input name="SOURCE" value="" type="hidden" />
+        <input name="ENROLLER_NAME" value="Anatolii Leheza" type="hidden" />
+        <input name="PAGE" value="1" type="hidden" />
+        <input name="LANGUAGE" value="en" type="hidden" />
+        <input name="FUNNEL" value="" type="hidden" />
+
+        <input type="hidden" name="STP" value="save" />
+
+        <div class="main-form">
+          <label>First&nbsp;Name</label>
+          <input
+            name="FNAME"
+            class="form-control"
+            maxlength="30"
+            size="20"
+            value=""
+            type="text"
+          />
+          <label>Last&nbsp;Name</label>
+          <input
+            name="LNAME"
+            class="form-control"
+            maxlength="30"
+            size="20"
+            value=""
+            type="text"
+          />
+          <label> Email</label>
+          <input
+            name="EMAIL"
+            class="form-control"
+            size="20"
+            maxlength="60"
+            value=""
+            type="text"
+          />
+
+          <input name="Submit" value="Reserve My Position Now!" type="submit" />
+        </div>
+      </form>
+    </div>
+
+    <!-- join button -->
+    <div class="nav-item">
+      <a href="/bo/join" class="nav-link-btn">Join Now</a>
+    </div>
+
+    <!-- join button styles -->
+    <style>
+      .nav-link-btn {
+        text-decoration: none;
+        display: inline-block;
+        background-color: #66a92f;
+        border-color: #66a92f;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        margin: 0.8rem 0;
+        padding: 0.6rem 1.6rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+
+      @media (min-width: 992px) {
+        .nav-link-btn {
+          font-size: 16px;
+          margin: 1.5rem 0 1.4rem;
+        }
+      }
+
+      @media (min-width: 1400px) {
+        .nav-link-btn {
+          font-size: 20px;
+          margin: 1.2rem 0 1.1rem;
+        }
+      }
+
+      .nav-link-btn:hover {
+        color: #fff;
+        background-color: #218838;
+        border-color: #1e7e34;
+        text-decoration: none;
+      }
+    </style>
+
+    <script>
+      console.log("hi!");
+    </script>
+  </body>
+</html>

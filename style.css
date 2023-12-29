@@ -1,0 +1,882 @@
+.header {
+  background-image: url(/images/l1/header-background.png);
+  background-size: cover;
+  /* height: 160px; */
+  padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    height: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    height: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header > .container,
+  .header > .container.fluid {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header-logo {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header-logo {
+    margin: 0;
+  }
+}
+
+.header-logo img {
+  height: auto;
+  margin-left: 16px;
+  width: 210px;
+}
+
+@media (min-width: 992px) {
+  .header-logo img {
+    margin: 0;
+    width: 280px;
+  }
+}
+
+.header-title-container {
+}
+
+.header-title {
+  color: #171d4d;
+  font-family: "Neue Helvetica W05_79 Comp Bol";
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 481px) {
+  .header-title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-title {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-title {
+    font-size: 42px;
+  }
+}
+
+.light-blue {
+  color: #53cbe3;
+}
+
+.header .header-subtitle {
+  color: #53cbe3;
+  color: #53cbe3;
+  font-size: 22pt;
+  font-family: "Helvetica Neue LT W05_67 Md Cn";
+  display: flex;
+  padding-right: 10px;
+}
+
+.header .header-underscore {
+  height: 13px;
+  line-height: 0px;
+  margin-top: -10px;
+  margin-left: 170px;
+}
+
+.header .header-underscore img {
+  height: 13px;
+}
+
+.sales-banner-1 {
+  position: relative;
+  background: url(/images/l1/couple-running.png) right bottom no-repeat,
+    url(/images/l1/landing-banner-1.jpg) left top no-repeat;
+  background-size: contain, cover;
+  height: 557px;
+}
+
+@media (max-width: 1750px) {
+  .sales-banner-1 {
+    background: url(/images/l1/landing-banner-1.jpg) left top no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .sales-banner-1 {
+    /* height: auto; */
+  }
+}
+
+@media (max-width: 768px) {
+  .sales-banner-1 {
+    background-position-x: -150px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 630px) {
+  .sales-banner-1 {
+    background-position-x: -120px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 481px) {
+  .sales-banner-1 {
+    background-position-x: -330px;
+    text-align: center;
+  }
+}
+
+.sales-banner-1-text-big {
+  font-size: 50pt;
+  color: #047edc;
+  text-shadow: 2px 2px 0 #ffffff;
+}
+
+.sales-banner-1-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(0%, -50%);
+  font-style: italic;
+  font-size: 30pt;
+  color: #171d4d;
+  text-shadow: 2px 2px 0 #ffffff;
+  text-transform: uppercase;
+  font-family: "Square_721 W01 Bold";
+  margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .header .header-subtitle {
+    font-size: 18pt;
+  }
+
+  .header .header-underscore {
+    margin-top: -10px;
+    margin-left: 140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header .header-underscore {
+    margin-top: -10px;
+    margin-left: 130px;
+    text-align: left;
+  }
+  .sales-banner-1-text-big {
+    font-size: 30pt;
+  }
+  .sales-banner-1-text {
+    font-size: 18pt;
+    right: 20px;
+    left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .header-subtitle {
+    font-size: 14pt;
+  }
+
+  .header .header-underscore {
+    margin-left: 100px;
+    margin-top: -2px;
+  }
+  .header .header-underscore img {
+    height: 10px;
+  }
+  .sales-banner-1-text-big {
+    font-size: 28pt;
+  }
+  .sales-banner-1-text {
+    font-size: 15pt;
+    right: 20px;
+    left: auto;
+  }
+}
+
+@media (max-width: 630px) {
+  .sales-banner-1-text-big {
+    font-size: 22pt;
+    text-shadow: 1px 1px 0 #ffffff;
+  }
+  .sales-banner-1-text {
+    font-size: 10pt;
+    text-shadow: 1px 1px 0 #ffffff;
+  }
+}
+
+@media (max-width: 481px) {
+  .header .header-subtitle {
+    display: block;
+    text-align: center;
+  }
+  .header .header-underscore {
+    margin-left: 0px;
+    margin-right: 40px;
+    text-align: center;
+  }
+
+  .sales-banner-1-text {
+    width: 100%;
+    text-align: center;
+    font-size: 15pt;
+    right: auto;
+    left: auto;
+  }
+}
+
+.sales-banner-2 {
+  background: url("/images/l1/blue_bar.jpg");
+  /* background: url('/images/l1/blue_bar.jpg'); */
+  background-size: cover;
+  color: #0d2646;
+  font-size: 24px;
+  line-height: 1.2;
+  min-height: 122px;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sales-banner-2 {
+    font-size: 28px;
+    min-height: 122px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sales-banner-2 {
+    min-height: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sales-banner-2 {
+    font-size: 32px;
+    min-height: 122px;
+    text-align: right;
+  }
+}
+
+.sales-banner-2-text-container {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 540px) {
+  .sales-banner-2-text-container {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sales-banner-2-text-container {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sales-banner-2-text-container {
+    padding-top: 20px;
+  }
+}
+
+.top-line {
+  background-color: #f25d27;
+  min-height: 10px;
+  width: auto;
+}
+
+.welcome-msg-block {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: "Helvetica Neue LT W05_65 Medium";
+}
+
+@media screen and (max-width: 200px) {
+  .header {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 325px) {
+  .header {
+    font-size: calc(-14.2px + 13.6vw);
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 1920px) {
+  .header {
+    font-size: calc(25.79639px + 1.29342vw);
+  }
+}
+
+.email-form {
+  height: 167px;
+  background-image: url(/images/l1/header-background.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.email-form-banner {
+  vertical-align: middle;
+  width: 42%;
+  background-color: rgba(185, 192, 209, 0.3);
+  -webkit-clip-path: polygon(
+    0 1%,
+    88% 0,
+    88% 0%,
+    100% 50%,
+    88% 100%,
+    88% 100%,
+    0 100%
+  );
+  clip-path: polygon(0 1%, 88% 0, 88% 0%, 100% 50%, 88% 100%, 88% 100%, 0 100%);
+  margin-right: 20px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.email-form-banner-text-container {
+  padding: 10px 10% 10px 0px;
+  text-align: center;
+}
+
+.email-form-banner-big-text {
+  font-size: 55px;
+  color: white;
+  font-family: "Neue Helvetica W05_79 Comp Bol";
+  line-height: 50px;
+  padding-bottom: 15px;
+  text-shadow: rgb(4, 126, 220) 4px 0px 0px,
+    rgb(4, 126, 220) 3.87565px 0.989616px 0px,
+    rgb(4, 126, 220) 3.51033px 1.9177px 0px,
+    rgb(4, 126, 220) 2.92676px 2.72656px 0px,
+    rgb(4, 126, 220) 2.16121px 3.36588px 0px,
+    rgb(4, 126, 220) 1.26129px 3.79594px 0px,
+    rgb(4, 126, 220) 0.282949px 3.98998px 0px,
+    rgb(4, 126, 220) -0.712984px 3.93594px 0px,
+    rgb(4, 126, 220) -1.66459px 3.63719px 0px,
+    rgb(4, 126, 220) -2.51269px 3.11229px 0px,
+    rgb(4, 126, 220) -3.20457px 2.39389px 0px,
+    rgb(4, 126, 220) -3.69721px 1.52664px 0px,
+    rgb(4, 126, 220) -3.95997px 0.56448px 0px,
+    rgb(4, 126, 220) -3.97652px -0.432781px 0px,
+    rgb(4, 126, 220) -3.74583px -1.40313px 0px,
+    rgb(4, 126, 220) -3.28224px -2.28625px 0px,
+    rgb(4, 126, 220) -2.61457px -3.02721px 0px,
+    rgb(4, 126, 220) -1.78435px -3.57996px 0px,
+    rgb(4, 126, 220) -0.843183px -3.91012px 0px,
+    rgb(4, 126, 220) 0.150409px -3.99717px 0px,
+    rgb(4, 126, 220) 1.13465px -3.8357px 0px,
+    rgb(4, 126, 220) 2.04834px -3.43574px 0px,
+    rgb(4, 126, 220) 2.83468px -2.82216px 0px,
+    rgb(4, 126, 220) 3.44477px -2.03312px 0px,
+    rgb(4, 126, 220) 3.84068px -1.11766px 0px,
+    rgb(4, 126, 220) 3.9978px -0.132717px 0px;
+}
+
+.email-form-banner-small-text {
+  color: #161c4c;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue LT W05_65 Medium";
+  line-height: 20px;
+}
+
+.email-form-banner-input-container {
+  vertical-align: middle;
+  width: 28%;
+}
+
+.email-form-banner-button-container {
+  vertical-align: middle;
+}
+
+.email-form .email-form-input {
+  color: #919191;
+  box-shadow: 0 0 0 2px rgba(89, 145, 35, 1), 0 0 0 4px white,
+    0 0 0 6px rgba(230, 230, 230, 1);
+  border-radius: none;
+  height: 70px;
+  width: 90%;
+}
+
+.email-form .email-form-submit {
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2px rgba(191, 50, 0, 1), 0 0 0 4px white,
+    0 0 0 6px rgba(230, 230, 230, 1);
+  border: 0px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue LT W05_97 Blk C";
+  background-image: linear-gradient(to bottom, #f35c26, #d33d08);
+  font-size: 38px;
+  line-height: 30px;
+}
+input [type="text"] {
+  text-indent: 15px;
+}
+@media (max-width: 1024px) {
+  .email-form .email-form-submit {
+    padding: 10px 0px;
+  }
+  .email-form-submit-text {
+    font-size: 25px;
+  }
+  .email-form-banner-big-text {
+    font-size: 38px;
+  }
+  .email-form-banner-small-text {
+    font-size: 14px;
+  }
+  img.email-form-submit-icon {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .email-form {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-repeat-y: repeat;
+    text-align: center;
+  }
+  .email-form-banner {
+    width: 70%;
+    clip-path: none;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+  }
+  .email-form-banner-text-container {
+    padding: 20px;
+  }
+  .email-form-banner-input-container {
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .email-form-banner-button-container {
+    width: auto;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 550px) {
+  img.email-form-submit-icon {
+    display: none;
+  }
+  .email-form .email-form-submit {
+    padding: 20px;
+  }
+  .email-form-banner-input-container {
+    width: 400px;
+  }
+}
+
+.product-section {
+  position: relative;
+}
+
+.product-section .products-img {
+  margin-top: -70px;
+  /* width: 56%; */
+  height: auto;
+  max-width: 100%;
+}
+
+.product-section {
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .product-section .products-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
+/* FOR FLOATED LAYOUT */
+/* @media screen and (min-width: 900px) {
+    .product-section .products-img {
+        float: left;
+    }
+}
+
+.product-section .benefits-checklist {
+    width: 42%;
+}
+
+@media screen and (min-width: 900px) {
+    .product-section .benefits-checklist {
+        float: right;
+    }
+}
+
+.product-section .benefits-checklist {
+        margin: 0 auto;
+        width: 90%;
+} */
+
+.product-section .benefits-checklist-cointainer {
+  margin-top: 30px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .product-section .benefits-checklist-cointainer {
+    margin-top: 0;
+  }
+}
+
+.product-section .benefits-checklist {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .product-section .benefits-checklist {
+    display: block;
+  }
+}
+
+.product-section .benefits-checklist-title {
+  line-height: 1;
+}
+
+.benefits-checklist-title {
+  color: #047cd8;
+  font-family: "Viva Beautiful W01 E";
+  font-size: 52px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.benefits-checklist-body {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.benefits-checklist-item {
+  background-image: url(/images/l1/list-image-small.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-family: "Helvetica Neue LT W05_67 Md Cn";
+  font-size: 20px;
+  line-height: 1.4;
+  list-style-type: none;
+  margin-bottom: 8px;
+  padding-left: 24px;
+}
+
+.benefits-checklist-item-emphasized-text {
+  color: #047cd8;
+  font-family: "Helvetica Neue LT W05_97 Blk C";
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 992px) {
+  .benefits-checklist-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-checklist-title {
+    font-size: 52px;
+  }
+
+  .benefits-checklist-item {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .benefits-checklist-title {
+    font-size: 60px;
+  }
+
+  .benefits-checklist-item {
+    font-size: 28px;
+  }
+}
+
+.call-to-action {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.call-to-action-text-container {
+  border-radius: 10px;
+  background-color: #efefef;
+  display: inline-block;
+  font-family: "Helvetica Neue LT W05_67 Md Cn";
+  color: #171d4d;
+  font-size: 59pt;
+  padding: 20px 35px;
+  border: 1px solid #e9e9e9;
+  background-image: linear-gradient(to bottom, #f8f8f8, #f1f1f1);
+  text-align: center;
+}
+
+.call-to-action-emphasized-text-container {
+  border: 1px solid #477817;
+  border-radius: 10px;
+  color: white;
+  padding: 0px 25px;
+  background-image: linear-gradient(to bottom, #66a92f 50%, #599123 50%);
+  text-transform: uppercase;
+  text-shadow: #477817 0px 0px 4px, #477817 0px 0px 4px, #477817 0px 0px 4px,
+    #477817 0px 0px 4px, #477817 0px 0px 4px, #477817 0px 0px 4px;
+}
+@media (max-width: 1200px) {
+  .call-to-action-text-container {
+    font-size: 40pt;
+    padding: 16px 26px;
+  }
+}
+@media (max-width: 768px) {
+  .call-to-action-text-container {
+    font-size: 30pt;
+    padding: 14px 20px;
+  }
+}
+
+.form-section {
+  position: relative;
+  background-color: white;
+  border: 1px solid #047dda;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: -15px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 992px) {
+  .form-section {
+    margin-bottom: 0;
+  }
+}
+
+.form-section-top {
+  background-color: #047dda;
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.form-section-title {
+  font-size: 32px;
+  font-family: "Neue Helvetica W05_79 Comp Bol";
+  line-height: 1;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .form-section-title {
+    font-size: 36px;
+  }
+}
+
+.form-section-title-lg-center {
+  display: block;
+  font-size: 36px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .form-section-title-lg-center {
+    font-size: 40px;
+  }
+}
+
+.form-section-top-disclaimer {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .form-section-top-disclaimer {
+    font-size: 18px;
+  }
+}
+
+.main-form {
+  padding: 15px;
+}
+
+.main-form input {
+  margin-bottom: 10px;
+}
+
+input[type="submit"],
+input[type="button"] {
+  background-image: linear-gradient(to bottom, #f25b25, #d33d08);
+  border: 2px solid #bf3200;
+  color: white;
+  font-family: "Helvetica Neue LT W05_97 Blk C";
+  font-size: 24px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  input[type="submit"] {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  input[type="submit"] {
+    font-size: 24px;
+  }
+}
+
+.guy {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .guy {
+    display: flex;
+    height: 100%;
+    margin-left: -20px;
+  }
+
+  .guy img {
+    display: inline-block;
+    align-self: flex-end;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .guy {
+    margin-left: -20px;
+  }
+
+  .guy img {
+    width: 300px;
+  }
+}
+
+.banner-checklist-cointainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  .banner-checklist-cointainer {
+    display: block;
+    margin: 40px 0 20px 0;
+  }
+}
+
+.banner-checklist {
+  padding: 0;
+}
+
+.banner-checklist-item {
+  background-image: url(/images/l1/list-image-small.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  font-family: "Helvetica Neue LT W05_67 Md Cn";
+  line-height: 1.2;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 24px;
+}
+
+@media (min-width: 1400px) {
+  .banner-checklist-item {
+    font-size: 30px;
+  }
+}
+
+.video-box {
+  display: flex;
+  border: 2px solid #599123;
+  background-color: black;
+  height: 288px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .video-box {
+    margin-bottom: 30px;
+  }
+}
+
+.enroller-check {
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+}
